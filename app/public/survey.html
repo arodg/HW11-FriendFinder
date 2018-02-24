@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Questions</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h2>Survey Questions</h2>
+		<hr>
+ 		<h3><strong>About You</strong></h3>
+         
+            
+        <form role="form">
+        	<div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Link to Photo Image (Recommended)</label>
+                <input type="text" class="form-control" id="photo" required>
+            </div>
+        </form>
+        <hr>
+
+        <h3>Question 1</h3>
+        <p>I am very athletic and active.</p>
+        <select class="form-control" id="Q1">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 2</h3>
+        <p>I am an extrovert.</p>
+        <select class="form-control" id="Q2">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 3</h3>
+        <p>I like being in or near water.</p>
+        <select class="form-control" id="Q3">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 4</h3>
+        <p>I am creative and artistic.</p>
+        <select class="form-control" id="Q4">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 5</h3>
+        <p>I feel that I am misunderstood by most people.</p>
+        <select class="form-control" id="Q5">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 6</h3>
+        <p>I think having a superpower would be a blessing.</p>
+        <select class="form-control" id="Q6">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 7</h3>
+        <p>I get angry easily.</p>
+        <select class="form-control" id="Q7">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 8</h3>
+        <p>I would rather work by myself than on a team.</p>
+        <select class="form-control" id="Q8">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 9</h3>
+        <p>Science is my favorite subject.</p>
+        <select class="form-control" id="Q9">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <h3>Question 10</h3>
+        <p>Superhero costumes should have a cape.</p>
+        <select class="form-control" id="Q10">
+            <option value="">Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+         </select>
+
+        <hr>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+        </div>
+
+        <hr>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/arodg/FriendFinder">GitHub Repo</a></p>
+            </div>
+        </footer>
+     
+     </div> 
+
+    <!-- Modal -->
+     <div id="result-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><strong> Your Best SuperHero Match</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div> 
+    </div>     
+
+</body>
+
+
+<!--Code below is based on Class Activity: HotRestaurant-->
+<script>
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+            
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                $("#Q1").val().trim(),
+                $("#Q2").val().trim(),
+                $("#Q3").val().trim(),
+                $("#Q4").val().trim(),
+                $("#Q5").val().trim(),
+                $("#Q6").val().trim(),
+                $("#Q7").val().trim(),
+                $("#Q8").val().trim(),
+                $("#Q9").val().trim(),
+                $("#Q10").val().trim()
+                ]
+        };
+        
+        console.log(newFriend);
+                
+        $.post("/api/friends", newFriend,
+        function(data) {
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+            $("#result-modal").modal("toggle");
+        });
+    });
+                    
+</script>  
+
+</html>       
